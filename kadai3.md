@@ -1,7 +1,6 @@
 ```uml
 @startuml
 participant お客
-participant ホール係
 
 
 お客　-> ホール係 : 注文
