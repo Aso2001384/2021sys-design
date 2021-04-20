@@ -1,6 +1,6 @@
 ```uml
 @startuml
-participant お客
+actor お客
 participant ホール係
 participant 厨房
 
