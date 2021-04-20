@@ -9,5 +9,5 @@ else (false);
 endif;
 
 end
-@entuml
+@enduml
 ```uml
