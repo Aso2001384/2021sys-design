@@ -26,8 +26,6 @@ DBサーバー -> Webサーバー : ログアウト結果
 
 end
 
-
 deactivate ユーザー
-
 @enduml
 ```
