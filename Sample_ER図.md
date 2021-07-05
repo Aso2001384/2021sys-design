@@ -1,7 +1,7 @@
 ```
 @startuml
 
-!define MASTER_MARK_COLOR 0000FF
+!define MASTER_MARK_COLOR Blue
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 skinparam class {
