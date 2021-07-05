@@ -46,5 +46,34 @@ entity "購入詳細" as ditail <d_purchase_ditail>{
     num
     }
 
+entity "商品マスタ" as items <m_items>{
+    + item_code[PK]
+    --
+    item_name
+    price
+    category_id[FK]
+    image
+    detail
+    del_flag
+    reg_date
+    }
+    
+entity "カテゴリマスタ" as category <m_category>{
+    + category_code[PK]
+    --
+    name
+    reg_date
+    }
+
+customer |○-○{ purchase
+purchase ||-|{ detail
+detail }-|| items
+items }○-|| category
+
+
+
+
+
+
 @enduml
 ```
