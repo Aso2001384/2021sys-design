@@ -13,8 +13,6 @@ skinparam class {
     ArrowColor Black
 }
 
-|○○{
-
 package "ECサイト" as target_system {
 
 entity "顧客マスタ" as customer <m_customers>{
@@ -29,7 +27,7 @@ entity "顧客マスタ" as customer <m_customers>{
     reg_date
   }
  
- entity "購入テーブル" as purchase <d_purchase>{
+ entity "購入テーブル" as order <d_purchase>{
     + order_id[PK]
     --
     customer_code[FK]
@@ -37,7 +35,7 @@ entity "顧客マスタ" as customer <m_customers>{
     total_price
     }
     
-entity "購入詳細" as ditail <d_purchase_ditail>{
+entity "購入詳細" as order_ditail <d_purchase_ditail>{
     + order_id[PK]
     + detail_id[PK]
     --
@@ -64,6 +62,11 @@ entity "カテゴリマスタ" as category <m_category>{
     name
     reg_date
     }
+
+customer       |o-ri-o{     order 
+order          ||-ri-|{     order_detail 
+order_detail    }-do-||     items 
+items          }o-le-||     category 
 
 @enduml
 ```
