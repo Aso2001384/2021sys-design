@@ -1,7 +1,7 @@
 ```
 @startuml
 
-!define MASTER_MARK_COLOR #FFFFFF
+!define MASTER_MARK_COLOR AAFFAA
 
 entity "顧客マスタ" as customer <m_customers>
 <<M,MASTER_MARK_COLOR>> {
