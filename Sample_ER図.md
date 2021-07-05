@@ -29,7 +29,7 @@ entity "顧客マスタ" as customer <m_customers>{
     reg_date
   }
  
- entity "購入テーブル" as detailtable <d_purchase>{
+ entity "購入テーブル" as cus <d_purchase>{
     + order_id[PK]
     --
     customer_code[FK]
