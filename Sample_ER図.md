@@ -13,7 +13,7 @@ skinparam class {
     ArrowColor Black
 }
 
-
+|○○{
 
 package "ECサイト" as target_system {
 
