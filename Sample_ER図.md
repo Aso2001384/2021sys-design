@@ -1,6 +1,8 @@
 ```
 @startuml
-顧客マスタ|○○{購入テーブル
+
+
+Entity01 }|..|| Entity02
 
 
 @enduml
