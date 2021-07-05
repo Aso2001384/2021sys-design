@@ -35,7 +35,7 @@ entity "顧客マスタ" as customer <m_customers>{
     total_price
     }
     
-entity "購入詳細" as order_ditail <d_purchase_ditail>{
+entity "購入詳細" as order_detail <d_purchase_ditail>{
     + order_id[PK]
     + detail_id[PK]
     --
