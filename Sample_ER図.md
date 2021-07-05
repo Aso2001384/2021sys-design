@@ -29,7 +29,22 @@ entity "顧客マスタ" as customer <m_customers>{
     reg_date
   }
  
- entity "購入テーブル" as customer <d_purchase>
+ entity "購入テーブル" as customer <d_purchase>{
+    + order_id[PK]
+    --
+    customer_code[FK]
+    purchase
+    total_price
+    }
+    
+entity "購入詳細" as customer <d_purchase_ditail>{
+    + order_id[PK]
+    + detail_id[PK]
+    --
+    item_code[FK]
+    price
+    num
+    }
 
 @enduml
 ```
