@@ -1,7 +1,21 @@
 ```
 @startuml
 
-!define MASTER_MARK_COLOR AAFFAA
+!define MASTER_MARK_COLOR 0000FF
+!define TRANSACTION_MARK_COLOR DeepSkyBlue
+
+skinparam class {
+    '図の背景
+    BackgroundColor Snow
+    '図の枠
+    BorderColor Black
+    'リレーションの色
+    ArrowColor Black
+}
+
+
+
+package "ECサイト" as target_system {
 
 entity "顧客マスタ" as customer <m_customers>
 <<M,MASTER_MARK_COLOR>> {
