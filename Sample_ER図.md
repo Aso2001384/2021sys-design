@@ -65,15 +65,5 @@ entity "カテゴリマスタ" as category <m_category>{
     reg_date
     }
 
-customer |○-○{ purchase
-purchase ||-|{ detail
-detail }-|| items
-items }○-|| category
-
-
-
-
-
-
 @enduml
 ```
