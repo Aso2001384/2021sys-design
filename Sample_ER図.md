@@ -5,8 +5,7 @@
 顧客マスタ }|..|| 購入テーブル
 
 
-entity "顧客マスタ" as customer <m_customers>
-<<M,MASTER_MARK_COLOR>> {
+entity "顧客マスタ" as customer <m_customers>{
     + customer_code [PK]
     --
     pass
