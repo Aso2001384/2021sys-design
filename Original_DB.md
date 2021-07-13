@@ -3,7 +3,7 @@
 ### 商品テーブル
 |属性名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|item_code|int(11)|〇|〇|-|
+|item_id|int(11)|〇|〇|-|
 |item_name|varchar(50)|-|〇|-|
 |price|int(11)|-|〇|-|
 |brand|varchar(20)|-|-|-|
@@ -42,4 +42,7 @@
 ### 購入詳細テーブル
 |属性名|型|PK|NN|FK|
 |-----|--|--|--|--|
-|order_id
+|detail_id|int(11)|〇|〇|-|
+|order_id|int(11)|〇|〇|〇|
+|item_id|int(11)|-|〇|〇|
+|quantity|int(11)|-|〇|-|
