@@ -1,6 +1,11 @@
 ```
 @startuml
 
+skinparam class {
+    backgroundColor white
+}
+
+
 package "ECサイト" as target_system {
 
 entity "会員情報テーブル" as customer <customer>{
