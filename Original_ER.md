@@ -59,10 +59,10 @@ entity "カテゴリーテーブル" as category <category>{
   bland
 }
 
-customer       |o-ri-o{     order 
-order          ||-ri-|{     order_detail 
-order_detail    }-do-||     items 
-items          }o-le-||     category 
+customer  |o-ri-o{     order 
+order     ||-ri-|{     detail 
+detail    }-do-||     item 
+item      }o-le-||     category 
 
 }
 
