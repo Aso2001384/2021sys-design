@@ -1,6 +1,6 @@
 package "ECサイト" as target_system {
 
-entity "会員情報テーブル" as customer{
+entity "会員情報テーブル" as customer <customer>{
     + user_id [PK]
     --
     user_name
@@ -12,7 +12,7 @@ entity "会員情報テーブル" as customer{
     delete_flag
   }
 
-entity "購入テーブル" as order{
+entity "購入テーブル" as order <order>{
   + order_id [PK]
   --
   user_id [FK]
@@ -20,7 +20,7 @@ entity "購入テーブル" as order{
   total
 }
 
-entity "購入詳細テーブル" as detail{
+entity "購入詳細テーブル" as detail <detail>{
   + detail_id [PK]
   + order_id [PK]
   --
@@ -29,7 +29,7 @@ entity "購入詳細テーブル" as detail{
   quantity
 }
 
-entity "商品テーブル" as item{
+entity "商品テーブル" as item <item>{
   + item_id [PK]
   --
   item_name
@@ -43,7 +43,7 @@ entity "商品テーブル" as item{
   delete_flg
 }
 
-entity "カテゴリーテーブル" as category{
+entity "カテゴリーテーブル" as category <category>{
   + category_id [PK]
   --
   category_name
