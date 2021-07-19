@@ -4,7 +4,6 @@
 skinparam class {
     backgroundColor white
     
-    ArrowColor Black
 }
 
 
