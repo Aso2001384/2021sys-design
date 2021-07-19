@@ -30,6 +30,8 @@
 |email|varchar(100)|-|〇|-|
 |tel|varchar(20)|-|〇|-|
 |address|varchar(100)|-|〇|-|
+|created_at|date|-|〇|-|
+|delete_flg|boolean|-|〇|-|
 
 ### 購入テーブル
 |属性名|型|PK|NN|FK|
