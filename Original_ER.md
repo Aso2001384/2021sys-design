@@ -61,7 +61,7 @@ entity "カテゴリーテーブル" as category <category>{
 
 customer  |o-ri-o{     order 
 order     ||-ri-|{     detail 
-detail    }-do-||     item 
+detail    }-do-||      item 
 item      }o-le-||     category 
 
 }
