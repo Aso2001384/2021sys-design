@@ -1,3 +1,6 @@
+```
+@startuml
+
 package "ECサイト" as target_system {
 
 entity "会員情報テーブル" as customer <customer>{
@@ -51,3 +54,5 @@ entity "カテゴリーテーブル" as category <category>{
 }
 
 }
+@enduml
+```
